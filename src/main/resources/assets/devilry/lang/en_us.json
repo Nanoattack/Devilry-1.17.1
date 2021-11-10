@@ -1,0 +1,10 @@
+{
+  "item.devilry.tin_ingot": "Tin Ingot",
+  "item.devilry.tin_nugget": "Tin Nugget",
+  "item.devilry.raw_tin": "Raw Tin",
+  "block.devilry.raw_tin_block": "Block of Raw Tin",
+  "block.devilry.tin_block": "Block of Tin",
+  "block.devilry.tin_ore": "Tin Ore",
+  "block.devilry.deepslate_tin_ore": "Deepslate Tin Ore",
+  "itemGroup.devilrymaterials": "Devilry - Materials"
+}
