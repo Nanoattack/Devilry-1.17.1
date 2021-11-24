@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider
         simpleBlock(ModBlocks.TIN_ORE.get());
         simpleBlock(ModBlocks.RAW_TIN_BLOCK.get());
         simpleBlock(ModBlocks.DEEPSLATE_TIN_ORE.get());
+        simpleBlock(ModBlocks.BRONZE_BLOCK.get());
     }
 }
 
