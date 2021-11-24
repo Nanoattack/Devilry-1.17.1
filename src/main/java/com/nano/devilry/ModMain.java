@@ -1,7 +1,12 @@
 package com.nano.devilry;
 
+import com.mojang.blaze3d.platform.ScreenManager;
 import com.nano.devilry.block.ModBlocks;
+import com.nano.devilry.blockentity.ModBlockEntities;
+import com.nano.devilry.container.ModContainers;
 import com.nano.devilry.item.ModItems;
+import com.nano.devilry.screen.MortarScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +36,8 @@ public class ModMain
 
         ModItems.register(eventbus);
         ModBlocks.register(eventbus);
+        ModBlockEntities.register(eventbus);
+        ModContainers.register(eventbus);
 
         eventbus.addListener(this::setup);
         eventbus.addListener(this::doClientStuff);
@@ -52,5 +59,7 @@ public class ModMain
         setRenderLayer(ModBlocks.BRONZE_CHAIN.get(), RenderType.cutout());
         setRenderLayer(ModBlocks.BRONZE_LANTERN.get(), RenderType.cutout());
         setRenderLayer(ModBlocks.MORTAR.get(), RenderType.cutout());
+
+        MenuScreens.register(ModContainers.MORTAR_CONTAINER.get(), MortarScreen::new);
     }
 }
